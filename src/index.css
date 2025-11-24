@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Theralife Natural Green Palette */
+    --background: 0 0% 100%;
+    --foreground: 145 80% 12%;
+
+    /* Forest Green - Deep, trustworthy */
+    --primary: 145 62% 21%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Mint Green - Vibrant, fresh */
+    --secondary: 142 76% 65%;
+    --secondary-foreground: 145 80% 12%;
+
+    /* Light Green - Soft, calming */
+    --accent: 138 76% 95%;
+    --accent-foreground: 145 62% 21%;
+
+    /* Muted greens for backgrounds */
+    --muted: 140 40% 96%;
+    --muted-foreground: 145 20% 45%;
+
+    /* Cards with subtle green tint */
+    --card: 0 0% 100%;
+    --card-foreground: 145 80% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 145 80% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 30% 90%;
+    --input: 140 30% 90%;
+    --ring: 142 76% 65%;
+
+    --radius: 1rem;
+
+    /* Custom Theralife Design Tokens */
+    --forest-deep: 145 62% 16%;
+    --forest-dark: 145 62% 21%;
+    --forest-medium: 145 55% 35%;
+    --mint-vibrant: 142 76% 65%;
+    --mint-soft: 142 60% 80%;
+    --nature-light: 138 76% 95%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(145, 62%, 16%) 0%, hsl(145, 55%, 35%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(138, 76%, 98%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(142, 76%, 65%) 0%, hsl(142, 60%, 80%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 2px 20px -5px hsl(145, 62%, 21%, 0.1);
+    --shadow-medium: 0 8px 30px -8px hsl(145, 62%, 21%, 0.15);
+    --shadow-strong: 0 15px 40px -10px hsl(145, 62%, 21%, 0.25);
+    --shadow-glow: 0 0 40px hsl(142, 76%, 65%, 0.3);
+
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .dark {
+    --background: 145 62% 8%;
+    --foreground: 138 76% 95%;
+
+    --primary: 142 76% 65%;
+    --primary-foreground: 145 80% 12%;
+
+    --secondary: 145 62% 21%;
+    --secondary-foreground: 138 76% 95%;
+
+    --accent: 145 55% 20%;
+    --accent-foreground: 142 76% 65%;
+
+    --muted: 145 40% 15%;
+    --muted-foreground: 140 20% 60%;
+
+    --card: 145 50% 12%;
+    --card-foreground: 138 76% 95%;
+
+    --border: 145 30% 25%;
+    --input: 145 30% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Smooth scrolling */
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+
+  /* Parallax effect */
+  .parallax {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Glass effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Custom animations */
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.8s ease-out;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .marquee-track {
+    min-width: max-content;
+    animation: marquee 18s linear infinite;
+  }
+}
