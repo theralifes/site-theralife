@@ -16,54 +16,64 @@ const Products = () => {
 
   const products = [
     {
-      name: "Desunchá",
+      name: "Desinchá",
       images: [desunchaImg],
       whatsappLink: WHATSAPP_LINK,
+      description: "Blend natural que auxilia na redução do inchaço e retenção de líquidos. Formulado com ingredientes selecionados para promover o bem-estar digestivo e sensação de leveza.",
     },
     {
       name: "Chá Verde",
       images: [chaVerdeNewImg],
       whatsappLink: WHATSAPP_LINK,
+      description: "Rico em antioxidantes e catequinas, o Chá Verde acelera o metabolismo, aumenta a disposição e auxilia no processo de emagrecimento saudável.",
     },
     {
       name: "Extreme",
       images: [extreme3Img],
       whatsappLink: WHATSAPP_LINK,
+      description: "Fórmula potente para quem busca resultados intensos. Combina termogênicos naturais que potencializam a queima de gordura e aumentam a energia durante o dia.",
     },
     {
       name: "Detox",
       images: [detox4Img],
       whatsappLink: WHATSAPP_LINK,
+      description: "Programa de desintoxicação natural que ajuda a eliminar toxinas do organismo, melhora o funcionamento intestinal e promove mais disposição e vitalidade.",
     },
     {
       name: "Lipochá",
       images: [lipocha2Img, lipocha2Img],
       whatsappLink: WHATSAPP_LINK,
+      description: "Chá seca barriga 100% natural. Auxilia na redução de medidas, combate a retenção de líquidos e promove a sensação de saciedade de forma saudável.",
     },
     {
       name: "Sene - Nutrilife",
       images: [sejeImg],
       whatsappLink: WHATSAPP_LINK,
+      description: "Auxilia no funcionamento intestinal, contribui para o bem-estar gastrointestinal, ajuda em caso de constipação e tem ação diurética natural. Contém 120 cápsulas de 500mg.",
     },
     {
       name: "Glico Vita",
       images: [glicoVitaImg],
       whatsappLink: WHATSAPP_LINK,
+      description: "Suplemento vitamínico completo que auxilia no controle glicêmico e fornece nutrientes essenciais para o bom funcionamento do organismo.",
     },
     {
       name: "New Queen Energy",
       images: [newQueenImg],
       whatsappLink: WHATSAPP_LINK,
+      description: "Desenvolvido especialmente para mulheres, fornece energia, vitalidade e bem-estar. Fórmula exclusiva com vitaminas e minerais essenciais para o dia a dia.",
     },
     {
       name: "Safira Beauty",
       images: [safiraBeautyImg],
       whatsappLink: WHATSAPP_LINK,
+      description: "Nutricosméticos que promovem beleza de dentro para fora. Auxilia na saúde da pele, cabelos e unhas com ingredientes naturais de alta qualidade.",
     },
     {
       name: "Saúde Essencial",
       images: [saudeImg],
       whatsappLink: WHATSAPP_LINK,
+      description: "Complexo multivitamínico completo para manutenção da saúde geral. Contém vitaminas, minerais e antioxidantes essenciais para o bem-estar diário.",
     },
   ];
 
@@ -132,8 +142,8 @@ const Products = () => {
         {/* Brand Note */}
         <div className="text-center mt-8 sm:mt-12 p-4 sm:p-6 bg-accent rounded-xl sm:rounded-2xl max-w-3xl mx-auto shadow-soft">
           <p className="text-sm sm:text-base text-muted-foreground">
-            Trabalhamos com a linha <span className="font-semibold text-primary">Nutrilife</span>,
-            marca reconhecida por sua excelência em produtos naturais e suplementos de alta qualidade.
+            Trabalhamos com <span className="font-semibold text-primary">diversas linhas</span>,
+            reconhecidas por sua excelência em produtos naturais e suplementos de alta qualidade.
           </p>
         </div>
 
