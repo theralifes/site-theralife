@@ -1,23 +1,44 @@
 import { useNavigate } from "react-router-dom";
-import ProductCard from "./ProductCard";
+import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
+import Footer from "@/components/Footer";
+
 // Importar novas imagens
 import saudeMulherImg from "@/assets/novas-images/Saude-da-mulher.jpg";
 import seneImg from "@/assets/novas-images/sene.jpg";
 import extremeImg from "@/assets/novas-images/extreme.jpg";
+import extreme2Img from "@/assets/novas-images/extreme2.jpg";
 import detoxImg from "@/assets/novas-images/detox.jpg";
+import detox2Img from "@/assets/novas-images/detox2.jpg";
 import ashwagandhaImg from "@/assets/novas-images/aswaganhda.jpg";
 import glucomannanImg from "@/assets/novas-images/glucomannam.jpg";
 import carvaoAtivadoImg from "@/assets/novas-images/carvao-ativado.jpg";
 import mulunguImg from "@/assets/novas-images/mulungo.jpg";
 import calmanteImg from "@/assets/novas-images/calmante.jpg";
 import blackMonsterImg from "@/assets/novas-images/black-monster.jpg";
+import colagenoImg from "@/assets/novas-images/Colageno.jpg";
 
-const Products = () => {
+// Importar imagens antigas para produtos adicionais
+import desunchaImg from "@/assets/images/desuncha.jpg";
+import detox4Img from "@/assets/images/Detox4.jpg";
+import extreme3Img from "@/assets/images/extreme3.jpg";
+import lipocha2Img from "@/assets/images/Lipochá-2.jpg";
+import lipochaImg from "@/assets/images/Lipocha.jpg";
+import newQueenImg from "@/assets/images/New-Queen.jpg";
+import safiraBeautyImg from "@/assets/images/safira-beauty.jpg";
+import safiraBeauty2Img from "@/assets/images/Safira-beauty2.jpg";
+import saudeImg from "@/assets/images/saude.jpg";
+import sejeImg from "@/assets/images/seje.jpg";
+import glicoVitaImg from "@/assets/images/glico-vita.jpg";
+import chaVerdeNewImg from "@/assets/images/cha-verde.jpg";
+
+const Catalog = () => {
   const navigate = useNavigate();
   const WHATSAPP_LINK = "https://wa.me/559891816061";
 
-  const products = [
+  // Produtos da página inicial (já estão na página inicial)
+  const initialProducts = [
     {
       name: "Saúde da Mulher",
       images: [saudeMulherImg],
@@ -95,13 +116,13 @@ Importante: sempre deve ser consumido com bastante água e de acordo com a recom
       images: [carvaoAtivadoImg],
       whatsappLink: WHATSAPP_LINK,
       description: `Carvão Ativado - 120 Cápsulas Desintoxicacão natural e bem-estar diário
-○ Carvão Ativado é conhecido por seu alto poder de absorção de toxinas e impurezas, auxiliando na saúde digestiva e promovendo uma sensacão de leveza. Ideal para quem busca mais equilíbrio no dia a dia.
-Benefícios:
-• Auxilia na eliminação de toxinas do organismc
-• Contribui para reduzir gases e inchaço abdomina
-• Apoia a saúde intestinal e digestiva
-• Sensação de bem-estar e leveza
-Conteúdo: 120 cápsulas Uso recomendado: 3 cápsulas ao dia Envio rápido: Postagem em menos de 24h (exceta finais de semana e feriados dia.`,
+      ○ Carvão Ativado é conhecido por seu alto poder de absorção de toxinas e impurezas, auxiliando na saúde digestiva e promovendo uma sensacão de leveza. Ideal para quem busca mais equilíbrio no dia a dia.
+      Benefícios:
+      • Auxilia na eliminação de toxinas do organismc
+      • Contribui para reduzir gases e inchaço abdomina
+      • Apoia a saúde intestinal e digestiva
+      • Sensação de bem-estar e leveza
+      Conteúdo: 120 cápsulas Uso recomendado: 3 cápsulas ao dia Envio rápido: Postagem em menos de 24h (exceta finais de semana e feriados dia.`,
     },
     {
       name: "Mulungu - 120 Cápsulas",
@@ -146,124 +167,122 @@ Conteúdo: 120 cápsulas Uso recomendado: 3 cápsulas ao dia Envio rápido: Post
     },
   ];
 
-  const extraMarqueeNames = [
-    "Colágeno",
-    "Glico Vita",
-    "Cartilagem",
-    "Mulungu",
-    "Morosil",
-    "Barbatimão",
-    "Detox",
-    "Desunchá",
-    "Tribulus",
-    "Carvão Ativado",
-    "Seca Barriga",
-    "MagriSbelt",
-    "Sene",
-    "Black Tribulus",
-    "Chá Verde",
-    "Pré Treino",
-    "Creatina",
-    "Safira Beauty",
-    "termo.Ox",
-    "Glucomannan",
-    "Calmante",
-    "Ashwagandha",
+  // Produtos adicionais para o catálogo completo
+  const additionalProducts = [
+    {
+      name: "Colágeno",
+      images: [colagenoImg],
+      whatsappLink: WHATSAPP_LINK,
+      description: "Contribui para a firmeza e elasticidade da pele, fortalece unhas e cabelos, ajuda na prevenção do envelhecimento precoce, auxilia na regeneração de tecidos, fortalece articulações, ligamentos e ossos. Essencial para a estrutura da pele, músculos e cartilagens. Contém 120 cápsulas.",
+    },
+    {
+      name: "Desinchá",
+      images: [desunchaImg],
+      whatsappLink: WHATSAPP_LINK,
+      description: "Blend natural que auxilia na redução do inchaço e retenção de líquidos. Formulado com ingredientes selecionados para promover o bem-estar digestivo e sensação de leveza.",
+    },
+    {
+      name: "Chá Verde",
+      images: [chaVerdeNewImg],
+      whatsappLink: WHATSAPP_LINK,
+      description: "Rico em antioxidantes e catequinas, o Chá Verde acelera o metabolismo, aumenta a disposição e auxilia no processo de emagrecimento saudável.",
+    },
+    {
+      name: "Extreme (Variação)",
+      images: [extreme2Img, extreme3Img],
+      whatsappLink: WHATSAPP_LINK,
+      description: "Fórmula potente para quem busca resultados intensos. Combina termogênicos naturais que potencializam a queima de gordura e aumentam a energia durante o dia.",
+    },
+    {
+      name: "Detox (Variação)",
+      images: [detox2Img, detox4Img],
+      whatsappLink: WHATSAPP_LINK,
+      description: "Programa de desintoxicação natural que ajuda a eliminar toxinas do organismo, melhora o funcionamento intestinal e promove mais disposição e vitalidade. Composição em cápsulas de 500 mg, feita a base de ESPIRULINA, PSYLLIUM, GUARANÁ, ÁGAR-ÁGAR E PICOLINATO DE CROMO. Proporciona a inibição do apetite por até 08 horas consecutivas, acelera o metabolismo até 03X mais. Emagrecedor 100% natural, sem efeito sanfona, controlador de ansiedade, diurético e laxante leve de ação controlada.",
+    },
+    {
+      name: "Lipochá",
+      images: [lipocha2Img, lipochaImg],
+      whatsappLink: WHATSAPP_LINK,
+      description: "Chá seca barriga 100% natural. Auxilia na redução de medidas, combate a retenção de líquidos e promove a sensação de saciedade de forma saudável.",
+    },
+    {
+      name: "Glico Vita",
+      images: [glicoVitaImg],
+      whatsappLink: WHATSAPP_LINK,
+      description: "Suplemento vitamínico completo que auxilia no controle glicêmico e fornece nutrientes essenciais para o bom funcionamento do organismo.",
+    },
+    {
+      name: "New Queen Energy",
+      images: [newQueenImg],
+      whatsappLink: WHATSAPP_LINK,
+      description: "Desenvolvido especialmente para mulheres, fornece energia, vitalidade e bem-estar. Fórmula exclusiva com vitaminas e minerais essenciais para o dia a dia.",
+    },
+    {
+      name: "Safira Beauty",
+      images: [safiraBeautyImg, safiraBeauty2Img],
+      whatsappLink: WHATSAPP_LINK,
+      description: "Nutricosméticos que promovem beleza de dentro para fora. Auxilia na saúde da pele, cabelos e unhas com ingredientes naturais de alta qualidade. Composição em cápsulas de 1000 mg, feita a base de spirulina verde, spirulina azul, matcha, citrus aurantium, psylium, folha de oliveira, café verde.",
+    },
+    {
+      name: "Saúde Essencial",
+      images: [saudeImg],
+      whatsappLink: WHATSAPP_LINK,
+      description: "Complexo multivitamínico completo para manutenção da saúde geral. Contém vitaminas, minerais e antioxidantes essenciais para o bem-estar diário.",
+    },
   ];
 
-  const productNames = products.map((product) => product.name);
-  const normalizedProductNames = productNames.map((name) => name.toLowerCase());
-
-  const uniqueExtras = extraMarqueeNames.filter(
-    (name) => !normalizedProductNames.includes(name.toLowerCase())
-  );
-
-  const marqueeNames = [...productNames, ...uniqueExtras];
-  const marqueeItems = [...marqueeNames, ...marqueeNames];
+  const allProducts = [...initialProducts, ...additionalProducts];
 
   return (
-    <section
-      id="produtos"
-      className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-nature-light to-background"
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-12 sm:mb-16 animate-fade-up">
-          <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-4 px-4"
-            style={{ fontFamily: "Outfit, sans-serif" }}
-          >
-            Nossos Produtos
-          </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
-            Suplementos naturais cuidadosamente selecionados para sua saúde e
-            bem-estar
-          </p>
-          <div className="w-16 sm:w-20 h-1 bg-gradient-accent rounded-full mx-auto mt-6" />
-        </div>
-
-        {/* Products Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
-          {products.map((product, index) => (
-            <div
-              key={product.name}
-              className="animate-fade-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <ProductCard {...product} />
-            </div>
-          ))}
-        </div>
-
-        {/* Brand Note */}
-        <div className="text-center mt-8 sm:mt-12 p-4 sm:p-6 bg-accent rounded-xl sm:rounded-2xl max-w-3xl mx-auto shadow-soft">
-          <p className="text-sm sm:text-base text-muted-foreground">
-            Trabalhamos com{" "}
-            <span className="font-semibold text-primary">diversas linhas</span>,
-            reconhecidas por sua excelência em produtos naturais e suplementos
-            de alta qualidade.
-          </p>
-        </div>
-
-        {/* Catalog CTA */}
-        <div id="catalogo-completo" className="mt-10 sm:mt-14 text-center">
-          <div className="inline-flex flex-col gap-4 sm:gap-5 bg-card border border-border shadow-soft rounded-2xl px-6 py-6 sm:px-10 sm:py-8 max-w-2xl">
-            <h3
-              className="text-2xl font-semibold text-primary"
-              style={{ fontFamily: "Outfit, sans-serif" }}
-            >
-              Quer ver o catálogo completo?
-            </h3>
-            <p className="text-muted-foreground">
-              Descubra todos os lançamentos, kits especiais e condições
-              exclusivas falando direto com nossa equipe.
-            </p>
+    <div className="scroll-smooth min-h-screen bg-gradient-to-b from-background to-nature-light">
+      {/* Header */}
+      <div className="bg-card border-b border-border sticky top-0 z-50 shadow-soft">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-between">
             <Button
-              size="lg"
-              className="w-full sm:w-auto"
-              onClick={() => navigate("/catalogo")}
+              variant="ghost"
+              onClick={() => navigate("/")}
+              className="flex items-center gap-2"
             >
-              Ver catálogo completo
+              <ArrowLeft className="w-4 h-4" />
+              Voltar
             </Button>
-          </div>
-        </div>
-
-        {/* Products Marquee */}
-        <div className="mt-10 sm:mt-12 overflow-hidden border border-border bg-card rounded-full shadow-soft">
-          <div className="marquee-track flex items-center gap-8 sm:gap-10 py-4 px-6">
-            {marqueeItems.map((name, index) => (
-              <span
-                key={`${name}-${index}`}
-                className="text-xs sm:text-sm font-semibold uppercase tracking-wide text-primary whitespace-nowrap"
-              >
-                {name}
-              </span>
-            ))}
+            <h1 className="text-2xl sm:text-3xl font-bold text-primary" style={{ fontFamily: "Outfit, sans-serif" }}>
+              Catálogo Completo
+            </h1>
+            <div className="w-20" /> {/* Spacer para centralizar */}
           </div>
         </div>
       </div>
-    </section>
+
+      {/* Products Grid */}
+      <section className="py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {allProducts.length === 0 ? (
+            <div className="text-center py-20">
+              <p className="text-muted-foreground text-lg">
+                Adicione produtos ao catálogo completo no arquivo <code className="bg-accent px-2 py-1 rounded">src/pages/Catalog.tsx</code>
+              </p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+              {allProducts.map((product, index) => (
+                <div
+                  key={product.name}
+                  className="animate-fade-up"
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
+                  <ProductCard {...product} />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
+      <Footer />
+    </div>
   );
 };
 
-export default Products;
+export default Catalog;

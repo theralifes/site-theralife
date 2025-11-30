@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Leaf, MessageCircle } from "lucide-react";
 
 const CTA = () => {
+  const navigate = useNavigate();
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-mint-soft/30 to-nature-light relative overflow-hidden">
       {/* Decorative elements */}
@@ -40,7 +42,7 @@ const CTA = () => {
               variant="outline"
               size="xl"
               className="w-full sm:w-auto"
-              onClick={() => document.getElementById('catalogo-completo')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => navigate("/catalogo")}
             >
               Ver catálogo completo
             </Button>
