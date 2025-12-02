@@ -18,6 +18,14 @@ import mulunguImg from "@/assets/novas-images/mulungo.jpg";
 import calmanteImg from "@/assets/novas-images/calmante.jpg";
 import blackMonsterImg from "@/assets/novas-images/black-monster.jpg";
 import colagenoImg from "@/assets/novas-images/Colageno.jpg";
+import safiraImg from "@/assets/novas-images/safira.jpg";
+import chaverdeImg from "@/assets/novas-images/chaverde.jpg";
+import desinchaImg from "@/assets/novas-images/desinchar.jpg";
+import creatinaImg from "@/assets/novas-images/creatina.jpg";
+import detoxSafiraImg from "@/assets/novas-images/detoxOutro.jpg";
+import ThermoStarImg from "@/assets/novas-images/ThermoStar.jpg";
+import ThermoStarQueenImg from "@/assets/novas-images/ThermoStarQueen.jpg";
+import tribulusImg from "@/assets/novas-images/tribulus.jpg";
 
 // Importar imagens antigas para produtos adicionais
 import desunchaImg from "@/assets/images/desuncha.jpg";
@@ -30,7 +38,7 @@ import safiraBeautyImg from "@/assets/images/safira-beauty.jpg";
 import safiraBeauty2Img from "@/assets/images/Safira-beauty2.jpg";
 import saudeImg from "@/assets/images/saude.jpg";
 import sejeImg from "@/assets/images/seje.jpg";
-import glicoVitaImg from "@/assets/images/glico-vita.jpg";
+import glicoVitaImg from "@/assets/images/glicoVita.jpg";
 import chaVerdeNewImg from "@/assets/images/cha-verde.jpg";
 
 const Catalog = () => {
@@ -177,15 +185,46 @@ Conteúdo: 120 cápsulas Uso recomendado: 3 cápsulas ao dia Envio rápido: Post
     },
     {
       name: "Desinchá",
-      images: [desunchaImg],
+      images: [desinchaImg],
       whatsappLink: WHATSAPP_LINK,
-      description: "Blend natural que auxilia na redução do inchaço e retenção de líquidos. Formulado com ingredientes selecionados para promover o bem-estar digestivo e sensação de leveza.",
+      description: `Desinchá Dia & Noite - Cápsulas
+Suplemento em cápsulas que oferece um plano de bem-estar para o dia e a noite.
+Cápsulas Dia (Azuis/Laranjas): Contêm ingredientes como Colina e Cafeína, que auxiliam no metabolismo lipídico e no aumento do estado de alerta e concentração.
+• Cápsulas Noite (Azuis Escuras): Possuem um blend com L-Triptofano, Maqnésio e vitaminas, formulado para proporcionar conforto e relaxamento para uma boa noite de sono
+É um mix de vitaminas, aminoácidos e nutrientes premium para auxiliar nos principais momentos da sua rotina saudável.`,
+    },
+    {
+      name: "Creatina",
+      images: [creatinaImg],
+      whatsappLink: WHATSAPP_LINK,
+      description: `CREATINA NUTRI LIFE: PERFORMANCE MÁXIMA E FOCO TOTAL.
+Não é só forca. É a união de corpo e mente no seu melhor!
+POTÊNCIA MUSCULAR: Aumente sua força e capacidade de repeticões para resultados visíveis na hipertrofia.
+• FOCO COGNITIVO: Impulsione a memoria e o raciocínio, mantendo a concentração até o final do treino.
+f RECUPERACÃO RÁPIDA: Reduza o dano muscular pós-treino e esteia pronto para o próximo desafio.
+120 Cápsulas de 500mg. A ciência do esporte ao seu favor!`,
+    },
+    {
+      name: "Detox Safira",
+      images: [detoxSafiraImg],
+      whatsappLink: WHATSAPP_LINK,
+      description: `DETOX SAFIRA: LIMPEZA, ENERGIA E LEVEZA NO SEU DIA!
+Seu corpo merece um reset. A formula DETOX combina superalimentos e ativos poderosos para transformar sua saúde:
+DESINTOXICAÇÃO PROFUNDA: Acão da Espirulina e Psvllium que auxiliam na impeza do organismo e no funcionamento intestinal.
+A MAIS ENERGIA: Com Guaraná para mpulsionar o seu metabolismo e te dar disposição natural.
+K1 SACIEDADE E CONTROLE: O Psvllium e ○ Agar-ágar contribuem para a sensacão de saciedade e suporte ao gerenciamento de peso.
+60 Cápsulas de 700mg. Experiente e comprove os resultados.`,
     },
     {
       name: "Chá Verde",
-      images: [chaVerdeNewImg],
+      images: [chaverdeImg],
       whatsappLink: WHATSAPP_LINK,
-      description: "Rico em antioxidantes e catequinas, o Chá Verde acelera o metabolismo, aumenta a disposição e auxilia no processo de emagrecimento saudável.",
+      description: `Acelera o Metabolismo (Acão Termogênica Natural): Ajuda seu corpo a queimar calorias de forma mais eficiente, mesmo em repouso.
+Potencializa a Queima de Gordura: ldea para complementar sua rotina de exercícios e alimentação equilibrada
+Energia e Disposicão Duradoura: Sinta-se mais ativo(a) e pronto(a) para encarar os desafos do dia
+Poderoso Antioxidante: Combate os radicais livres, protegendo suas células e prevenindo o envelhecimento precoce.
+Suporte ao Controle Metabólico: Auxilia na manutencão dos níveis saudáveis de colesterol e glicose.
+Detox Natural: Favorece a eliminacão de toxinas acumuladas no organismo`,
     },
     {
       name: "Extreme (Variação)",
@@ -209,7 +248,12 @@ Conteúdo: 120 cápsulas Uso recomendado: 3 cápsulas ao dia Envio rápido: Post
       name: "Glico Vita",
       images: [glicoVitaImg],
       whatsappLink: WHATSAPP_LINK,
-      description: "Suplemento vitamínico completo que auxilia no controle glicêmico e fornece nutrientes essenciais para o bom funcionamento do organismo.",
+      description: `GLICO VITA ANTI DIABETES: O SEU ALIADO 100% NATURAL PARA O EQUILİBRIO.
+Desenvolvido para ajudar você a ter uma vida mais saudável e controlada:
+. CONTROLE NATURAL: Ajuda a manter os níveis de glicose equilibrados de forma natural.
+• FORMULAÇÃO PURA: Composto por ingredientes 100% naturais e totalmente livre de glúten.
+O BEM-ESTAR: Suporte diário para quem busca um estilo de vida mais saudável e prevenido.
+120 Cápsulas de 500mg. Cuide da sua saúde com a força da natureza!`
     },
     {
       name: "New Queen Energy",
@@ -219,9 +263,53 @@ Conteúdo: 120 cápsulas Uso recomendado: 3 cápsulas ao dia Envio rápido: Post
     },
     {
       name: "Safira Beauty",
-      images: [safiraBeautyImg, safiraBeauty2Img],
+      images: [safiraImg],
       whatsappLink: WHATSAPP_LINK,
-      description: "Nutricosméticos que promovem beleza de dentro para fora. Auxilia na saúde da pele, cabelos e unhas com ingredientes naturais de alta qualidade. Composição em cápsulas de 1000 mg, feita a base de spirulina verde, spirulina azul, matcha, citrus aurantium, psylium, folha de oliveira, café verde.",
+      description: `O suplemento "Safira Beauty" combina ingredientes populares para promover saúde e bem-estar, especialmente focado em beleza e articulacões. Aqui estão os possíveis benefícios dos ingredientes:•          Colágeno tipo ll:
+• Ajuda a manter a saude das articulacões cartilagens, tendões)
+• Pode melhorar a elasticidade e hidratação da pele, reduzindo sinais de envelhecimento (rugas, flacidez)
+• Contribui para a saúde dos cabelos e unhas.
+O Glucosamina:
+• Suporta a saúde das articulacões ajudando a reduzir dor e inflamação comum em osteoartrite)
+• Pode ajudar na regeneração da cartilagem ebu na redução do desgaste articular.
+O Condroitina:
+Protege e regenera as articulações, ajudando a manter a lubrificacão e elasticidade da cartilagem.
+• Pode aliviar dor e inflamação em articulações.
+• Ácido Hialurônico:
+• Hidrata a pele, melhorando elasticidade e reduzindo aparência de ruqas
+• Ajuda a manter a lubrificacão das articulações.`,
+    },
+    {
+      name: "Thermo Star",
+      images: [ThermoStarImg],
+      whatsappLink: WHATSAPP_LINK,
+      description: `THERMO STAR 1000: O SEGREDO NATURAL PARA QUEM QUER BRILHAR.
+Chegou o seu aliado premium para 0 emagrecimento, com ativos poderosos como Café Verde, Espirulina e Guaraná.
+' QUEIMA ACELERADA: Acelera o metabolismo e reduz a gordura localizada
+CONTROLE E LEVEZA: Diminui a compulsão por doces e elimina a retencãc de líquidos.
+*+ EQUILİBRIO TOTAL: Melhora o funcionamento do intestino e auxilia na saúde hormonal feminina
+60 Cápsulas de poder natural. Transforme seu corpo com Thermo Star 1000!`,
+    },
+    {
+      name: "Thermo Star Queen",
+      images: [ThermoStarQueenImg],
+      whatsappLink: WHATSAPP_LINK,
+      description: `Natural Star QUEEN é o suplemento em cápsulas que vai transformar seus fios.
+Crescimento Acelerado: Estimula o nascimento e crescimento capilar
+• Menos Queda: Reduz a perda dos fios de forma eficaz
+Força Total: Fortalece da raiz às pontas, deixando seus cabelos mais resistentes e saudáveis.
+ Garanta já o seu e descubra o poder de um cabelo forte e longo.`,
+    },
+    {
+      name: "TRIBULUS TERRESTRIS",
+      images: [tribulusImg],
+      whatsappLink: WHATSAPP_LINK,
+      description: `TRIBULUS TERRESTRIS: Sua Força e Energia no Máximo!
+Cansado de treinos fracos e falta de disposição? O TRIBULUS Terrestris é o suplemento herbal que você precisa para turbinar seus resultados
+Aumente Seu Potencial:
+• Melhora a Forca Muscular: Potencialize seus treinos e ganhe mais desempenho.
+Aumenta a Síntese de Testosterona: Suporte natural para a produção hormonal essencial.
+• Mais Energia e Disposição: Tenha o gás necessário para o dia a dia e para a academia.`,
     },
     {
       name: "Saúde Essencial",
