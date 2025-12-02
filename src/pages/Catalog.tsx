@@ -24,7 +24,7 @@ import desinchaImg from "@/assets/novas-images/desinchar.jpg";
 import creatinaImg from "@/assets/novas-images/creatina.jpg";
 import detoxSafiraImg from "@/assets/novas-images/detoxOutro.jpg";
 import ThermoStarImg from "@/assets/novas-images/thermoStar.jpg";
-import ThermoStarQueenImg from "@/assets/novas-images/ThermoStarQueen.jpg";
+import teste from "@/assets/novas-images/teste.jpg";
 import tribulusImg from "@/assets/novas-images/tribulus.jpg";
 import glicoVitaImg from "@/assets/novas-images/glicoVita.jpg";
 
@@ -293,7 +293,7 @@ CONTROLE E LEVEZA: Diminui a compulsão por doces e elimina a retencãc de líqu
     },
     {
       name: "Thermo Star Queen",
-      images: [ThermoStarQueenImg],
+      images: [teste],
       whatsappLink: WHATSAPP_LINK,
       description: `Natural Star QUEEN é o suplemento em cápsulas que vai transformar seus fios.
 Crescimento Acelerado: Estimula o nascimento e crescimento capilar
