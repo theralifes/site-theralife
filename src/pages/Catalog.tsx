@@ -26,6 +26,7 @@ import detoxSafiraImg from "@/assets/novas-images/detoxOutro.jpg";
 import ThermoStarImg from "@/assets/novas-images/ThermoStar.jpg";
 import ThermoStarQueenImg from "@/assets/novas-images/ThermoStarQueen.jpg";
 import tribulusImg from "@/assets/novas-images/tribulus.jpg";
+import glicoVitaImg from "@/assets/novas-images/glicoVita.jpg";
 
 // Importar imagens antigas para produtos adicionais
 import desunchaImg from "@/assets/images/desuncha.jpg";
@@ -38,7 +39,7 @@ import safiraBeautyImg from "@/assets/images/safira-beauty.jpg";
 import safiraBeauty2Img from "@/assets/images/Safira-beauty2.jpg";
 import saudeImg from "@/assets/images/saude.jpg";
 import sejeImg from "@/assets/images/seje.jpg";
-import glicoVitaImg from "@/assets/images/glicoVita.jpg";
+
 import chaVerdeNewImg from "@/assets/images/cha-verde.jpg";
 
 const Catalog = () => {
