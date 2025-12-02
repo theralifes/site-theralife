@@ -23,8 +23,8 @@ import chaverdeImg from "@/assets/novas-images/chaverde.jpg";
 import desinchaImg from "@/assets/novas-images/desinchar.jpg";
 import creatinaImg from "@/assets/novas-images/creatina.jpg";
 import detoxSafiraImg from "@/assets/novas-images/detoxOutro.jpg";
-import ThermoStarImg from "@/assets/novas-images/thermoStar.jpg";
 import teste from "@/assets/novas-images/teste.jpg";
+import testee from "@/assets/novas-images/testee.jpg";
 import tribulusImg from "@/assets/novas-images/tribulus.jpg";
 import glicoVitaImg from "@/assets/novas-images/glicoVita.jpg";
 
@@ -35,12 +35,8 @@ import extreme3Img from "@/assets/images/extreme3.jpg";
 import lipocha2Img from "@/assets/images/Lipochá-2.jpg";
 import lipochaImg from "@/assets/images/Lipocha.jpg";
 import newQueenImg from "@/assets/images/New-Queen.jpg";
-import safiraBeautyImg from "@/assets/images/safira-beauty.jpg";
-import safiraBeauty2Img from "@/assets/images/Safira-beauty2.jpg";
 import saudeImg from "@/assets/images/saude.jpg";
-import sejeImg from "@/assets/images/seje.jpg";
 
-import chaVerdeNewImg from "@/assets/images/cha-verde.jpg";
 
 const Catalog = () => {
   const navigate = useNavigate();
@@ -282,7 +278,7 @@ Protege e regenera as articulações, ajudando a manter a lubrificacão e elasti
     },
     {
       name: "Thermo Star",
-      images: [ThermoStarImg],
+      images: [testee],
       whatsappLink: WHATSAPP_LINK,
       description: `THERMO STAR 1000: O SEGREDO NATURAL PARA QUEM QUER BRILHAR.
 Chegou o seu aliado premium para 0 emagrecimento, com ativos poderosos como Café Verde, Espirulina e Guaraná.
