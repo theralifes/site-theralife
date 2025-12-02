@@ -12,8 +12,6 @@ import extreme2Img from "@/assets/novas-images/extreme2.jpg";
 import detoxImg from "@/assets/novas-images/detox.jpg";
 import detox2Img from "@/assets/novas-images/detox2.jpg";
 import ashwagandhaImg from "@/assets/novas-images/aswaganhda.jpg";
-import glucomannanImg from "@/assets/novas-images/glucomannam.jpg";
-import carvaoAtivadoImg from "@/assets/novas-images/carvao-ativado.jpg";
 import mulunguImg from "@/assets/novas-images/mulungo.jpg";
 import calmanteImg from "@/assets/novas-images/calmante.jpg";
 import blackMonsterImg from "@/assets/novas-images/black-monster.jpg";
@@ -27,6 +25,9 @@ import teste from "@/assets/novas-images/teste.jpg";
 import testee from "@/assets/novas-images/testee.jpg";
 import tribulusImg from "@/assets/novas-images/tribulus.jpg";
 import glicoVitaImg from "@/assets/novas-images/glicoVita.jpg";
+import seca from "@/assets/novas-images/seca.jpg";
+import carvao from "@/assets/novas-images/carvao.jpg";
+import gl from "@/assets/novas-images/gl.jpg";
 
 // Importar imagens antigas para produtos adicionais
 import desunchaImg from "@/assets/images/desuncha.jpg";
@@ -108,7 +109,7 @@ Uso recomendado: conforme indicação do fabricante`,
     },
     {
       name: "Glucomannan",
-      images: [glucomannanImg],
+      images: [gl],
       whatsappLink: WHATSAPP_LINK,
       description: `• Glucomannan auxilia na sensacão de saciedade, ajudando a controlar o apetite;
 • Contribui para o equilíbrio do intestino, por ser rico em fibras;
@@ -118,7 +119,7 @@ Importante: sempre deve ser consumido com bastante água e de acordo com a recom
     },
     {
       name: "Carvão Ativado - 120 Cápsulas",
-      images: [carvaoAtivadoImg],
+      images: [carvao],
       whatsappLink: WHATSAPP_LINK,
       description: `Carvão Ativado - 120 Cápsulas Desintoxicacão natural e bem-estar diário
       ○ Carvão Ativado é conhecido por seu alto poder de absorção de toxinas e impurezas, auxiliando na saúde digestiva e promovendo uma sensacão de leveza. Ideal para quem busca mais equilíbrio no dia a dia.
@@ -189,6 +190,18 @@ Suplemento em cápsulas que oferece um plano de bem-estar para o dia e a noite.
 Cápsulas Dia (Azuis/Laranjas): Contêm ingredientes como Colina e Cafeína, que auxiliam no metabolismo lipídico e no aumento do estado de alerta e concentração.
 • Cápsulas Noite (Azuis Escuras): Possuem um blend com L-Triptofano, Maqnésio e vitaminas, formulado para proporcionar conforto e relaxamento para uma boa noite de sono
 É um mix de vitaminas, aminoácidos e nutrientes premium para auxiliar nos principais momentos da sua rotina saudável.`,
+    },
+    {
+      name: "Nutri Life SECA BARRIGA",
+      images: [seca],
+      whatsappLink: WHATSAPP_LINK,
+      description: `Nutri Life SECA BARRIGA: Seu Aliado para um Corpo Renovado! Principais Benefícios:
+• Ação Diurética Potente: Combate o inchacc e a retencão de liquidos.
+• Acelera o Metabolismo: Contribui para a queima eficaz de gorduras
+Redução de Apetite: Promove sensacão de saciedade, auxiliando no controle da alimentação.
+Efeito Desintoxicante: Ajuda a purificar o organismo.
+Contém 120 Cápsulas de 500 mg
+Recomendacão de Uso: Apenas 3 cápsulas ao dia.`,
     },
     {
       name: "Creatina",
@@ -307,12 +320,6 @@ Aumente Seu Potencial:
 • Melhora a Forca Muscular: Potencialize seus treinos e ganhe mais desempenho.
 Aumenta a Síntese de Testosterona: Suporte natural para a produção hormonal essencial.
 • Mais Energia e Disposição: Tenha o gás necessário para o dia a dia e para a academia.`,
-    },
-    {
-      name: "Saúde Essencial",
-      images: [saudeImg],
-      whatsappLink: WHATSAPP_LINK,
-      description: "Complexo multivitamínico completo para manutenção da saúde geral. Contém vitaminas, minerais e antioxidantes essenciais para o bem-estar diário.",
     },
   ];
 

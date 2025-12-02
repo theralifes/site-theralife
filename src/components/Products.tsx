@@ -7,11 +7,11 @@ import seneImg from "@/assets/novas-images/sene.jpg";
 import extremeImg from "@/assets/novas-images/extreme.jpg";
 import detoxImg from "@/assets/novas-images/detox.jpg";
 import ashwagandhaImg from "@/assets/novas-images/aswaganhda.jpg";
-import glucomannanImg from "@/assets/novas-images/glucomannam.jpg";
-import carvaoAtivadoImg from "@/assets/novas-images/carvao-ativado.jpg";
 import mulunguImg from "@/assets/novas-images/mulungo.jpg";
 import calmanteImg from "@/assets/novas-images/calmante.jpg";
-import blackMonsterImg from "@/assets/novas-images/black-monster.jpg";
+import seca from "@/assets/novas-images/seca.jpg";
+import carvao from "@/assets/novas-images/carvao.jpg";
+import gl from "@/assets/novas-images/gl.jpg";
 
 const Products = () => {
   const navigate = useNavigate();
@@ -82,7 +82,7 @@ Uso recomendado: conforme indicação do fabricante`,
     },
     {
       name: "Glucomannan",
-      images: [glucomannanImg],
+      images: [gl],
       whatsappLink: WHATSAPP_LINK,
       description: `• Glucomannan auxilia na sensacão de saciedade, ajudando a controlar o apetite;
 • Contribui para o equilíbrio do intestino, por ser rico em fibras;
@@ -92,7 +92,7 @@ Importante: sempre deve ser consumido com bastante água e de acordo com a recom
     },
     {
       name: "Carvão Ativado - 120 Cápsulas",
-      images: [carvaoAtivadoImg],
+      images: [carvao],
       whatsappLink: WHATSAPP_LINK,
       description: `Carvão Ativado - 120 Cápsulas Desintoxicacão natural e bem-estar diário
 ○ Carvão Ativado é conhecido por seu alto poder de absorção de toxinas e impurezas, auxiliando na saúde digestiva e promovendo uma sensacão de leveza. Ideal para quem busca mais equilíbrio no dia a dia.
@@ -131,18 +131,16 @@ Auxilia na sensacão de bem-estar
 Conteúdo: 120 cápsulas Uso recomendado: 3 cápsulas ao dia Envio rápido: Postagem em menos de 24h (exceto finais de semana e feriados.`,
     },
     {
-      name: "Black Monster - 120 Cápsulas",
-      images: [blackMonsterImg],
+      name: "Nutri Life SECA BARRIGA",
+      images: [seca],
       whatsappLink: WHATSAPP_LINK,
-      description: `Black Monster - 120 Cápsulas Energia, disposicão e performance para o seu dia
-○ Black Monster é um suplemento desenvolvido para quem busca mais foco, vitalidade e resistência. Sua fórmula contém ingredientes que apoiam a energia física e mental, ajudando no rendimento diário e em treinos intensos.
-Benefícios:
-• Contribui para mais disposição e energia
-Apoia a resistência física
-.
-Auxilia no foco e concentração
-• Ideal para treinos e rotina ativa
-Conteúdo: 120 cápsulas Uso recomendado: 3 cápsulas ao dia Envio rápido: Postagem em menos de 24h (exceto finais de semana e feriados.`,
+      description: `Nutri Life SECA BARRIGA: Seu Aliado para um Corpo Renovado! Principais Benefícios:
+• Ação Diurética Potente: Combate o inchacc e a retencão de liquidos.
+• Acelera o Metabolismo: Contribui para a queima eficaz de gorduras
+Redução de Apetite: Promove sensacão de saciedade, auxiliando no controle da alimentação.
+Efeito Desintoxicante: Ajuda a purificar o organismo.
+Contém 120 Cápsulas de 500 mg
+Recomendacão de Uso: Apenas 3 cápsulas ao dia.`,
     },
   ];
 
