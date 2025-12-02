@@ -23,7 +23,7 @@ import chaverdeImg from "@/assets/novas-images/chaverde.jpg";
 import desinchaImg from "@/assets/novas-images/desinchar.jpg";
 import creatinaImg from "@/assets/novas-images/creatina.jpg";
 import detoxSafiraImg from "@/assets/novas-images/detoxOutro.jpg";
-import ThermoStarImg from "@/assets/novas-images/ThermoStar.jpg";
+import ThermoStarImg from "@/assets/novas-images/thermoStar.jpg";
 import ThermoStarQueenImg from "@/assets/novas-images/ThermoStarQueen.jpg";
 import tribulusImg from "@/assets/novas-images/tribulus.jpg";
 import glicoVitaImg from "@/assets/novas-images/glicoVita.jpg";
