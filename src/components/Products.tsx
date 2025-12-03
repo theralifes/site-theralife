@@ -15,7 +15,7 @@ import gl from "@/assets/novas-images/gl.jpg";
 
 const Products = () => {
   const navigate = useNavigate();
-  const WHATSAPP_LINK = "https://wa.me/559891816061";
+  const WHATSAPP_LINK = "https://wa.me/91991585004";
 
   const products = [
     {

@@ -29,7 +29,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/559891816061"
+                href="https://wa.me/91991585004"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-white/10 hover:bg-[#25D366] hover:text-white flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-soft hover:shadow-glow"
@@ -43,10 +43,10 @@ const Footer = () => {
           <div className="text-center sm:text-left lg:text-right sm:col-span-2 lg:col-span-1">
             <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4" style={{ fontFamily: 'Outfit, sans-serif' }}>Contato</h3>
             <a
-              href="https://wa.me/559891816061"
+              href="https://wa.me/91991585004"
               className="text-secondary hover:text-mint-soft transition-colors duration-300 text-xs sm:text-sm block"
             >
-              WhatsApp: (98) 9181-6061
+              WhatsApp: (91) 99158-5004
             </a>
             <p className="text-white/70 text-xs sm:text-sm mt-2">
               <a href="https://www.instagram.com/__theralife__" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors">

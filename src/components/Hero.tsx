@@ -53,7 +53,7 @@ const Hero = () => {
                 variant="whatsapp"
                 size="lg"
                 className="w-full sm:w-auto"
-                onClick={() => window.open("https://wa.me/559891816061", "_blank")}
+                onClick={() => window.open("https://wa.me/91991585004", "_blank")}
               >
                 <MessageCircle className="w-4 h-4" />
                 Falar no WhatsApp

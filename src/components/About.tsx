@@ -6,7 +6,7 @@ interface AboutProps {
   whatsappLink?: string;
 }
 
-const About = ({ whatsappLink = "https://wa.me/559891816061" }: AboutProps) => {
+const About = ({ whatsappLink = "https://wa.me/91991585004" }: AboutProps) => {
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-background to-nature-light">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

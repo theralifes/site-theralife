@@ -33,7 +33,7 @@ const CTA = () => {
               variant="hero"
               size="xl"
               className="w-full sm:w-auto"
-              onClick={() => window.open('https://wa.me/559891816061', '_blank')}
+              onClick={() => window.open('https://wa.me/91991585004', '_blank')}
             >
               <MessageCircle className="w-5 h-5" />
               Quero meus produtos

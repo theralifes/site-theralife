@@ -21,6 +21,8 @@ const ProductCard = ({ name, images, whatsappLink, description }: ProductCardPro
   const gallery = images.length ? images : [FALLBACK_IMAGE];
   const [activeImage, setActiveImage] = useState(0);
   const [showModal, setShowModal] = useState(false);
+  const [showImageModal, setShowImageModal] = useState(false);
+  const [modalImageIndex, setModalImageIndex] = useState(0);
   const [isClamped, setIsClamped] = useState(false);
   const descRef = useRef<HTMLParagraphElement>(null);
 
@@ -35,7 +37,13 @@ const ProductCard = ({ name, images, whatsappLink, description }: ProductCardPro
     <>
       <div className="group bg-card rounded-xl sm:rounded-2xl overflow-hidden shadow-medium hover:shadow-strong transition-all duration-500 hover:-translate-y-2">
         {/* Image */}
-        <div className="relative aspect-square overflow-hidden bg-accent">
+        <div
+          className="relative aspect-square overflow-hidden bg-accent cursor-pointer"
+          onClick={() => {
+            setModalImageIndex(activeImage);
+            setShowImageModal(true);
+          }}
+        >
           <img
             src={gallery[activeImage] ?? gallery[0]}
             alt={name}
@@ -52,7 +60,10 @@ const ProductCard = ({ name, images, whatsappLink, description }: ProductCardPro
                     index === activeImage ? "bg-white" : "bg-white/30"
                   }`}
                   aria-label={`Mostrar imagem ${index + 1} do produto ${name}`}
-                  onClick={() => setActiveImage(index)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setActiveImage(index);
+                  }}
                 />
               ))}
             </div>
@@ -96,7 +107,7 @@ const ProductCard = ({ name, images, whatsappLink, description }: ProductCardPro
         </div>
       </div>
 
-      {/* Modal */}
+      {/* Modal de Descrição */}
       <Dialog open={showModal} onOpenChange={setShowModal}>
         <DialogContent className="max-w-lg">
           <DialogHeader>
@@ -105,6 +116,37 @@ const ProductCard = ({ name, images, whatsappLink, description }: ProductCardPro
               {description}
             </DialogDescription>
           </DialogHeader>
+        </DialogContent>
+      </Dialog>
+
+      {/* Modal de Imagem */}
+      <Dialog open={showImageModal} onOpenChange={setShowImageModal}>
+        <DialogContent className="max-w-4xl max-h-[90vh] p-0 border-0 bg-transparent shadow-none [&>button]:hidden">
+          <div className="relative w-full h-full flex items-center justify-center">
+            {/* Botão X para fechar */}
+            <button
+              onClick={() => setShowImageModal(false)}
+              className="absolute top-4 right-4 z-50 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-all duration-300"
+              aria-label="Fechar"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            {/* Imagem */}
+            <img
+              src={gallery[modalImageIndex] ?? gallery[0]}
+              alt={name}
+              className="max-w-full max-h-[90vh] object-contain"
+            />
+          </div>
         </DialogContent>
       </Dialog>
     </>

@@ -41,7 +41,7 @@ import saudeImg from "@/assets/images/saude.jpg";
 
 const Catalog = () => {
   const navigate = useNavigate();
-  const WHATSAPP_LINK = "https://wa.me/559891816061";
+  const WHATSAPP_LINK = "https://wa.me/91991585004";
 
   // Produtos da página inicial (já estão na página inicial)
   const initialProducts = [
