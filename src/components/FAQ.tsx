@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "Como funciona a entrega?",
     answer:
-      "Enviamos para todo o Brasil com rastreamento em tempo real. O prazo médio é de 3 a 7 dias úteis após a confirmação do pagamento.",
+      "Enviamos para todo o Brasil com rastreamento em tempo real. O prazo médio é de 10 dias úteis após a confirmação do pagamento.",
   },
   {
     question: "Posso combinar diferentes suplementos?",

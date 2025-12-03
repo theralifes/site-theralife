@@ -24,7 +24,7 @@ const Hero = () => {
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary leading-tight"
                 style={{ fontFamily: "Outfit, sans-serif" }}
               >
-                Bem-estar natural com estética minimalista e resultados reais.
+                Bem-estar natural focado em resultados reais.
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground">
                 Fórmulas limpas, estoques sempre frescos e um atendimento consultivo para você escolher o suplemento ideal sem complicação.

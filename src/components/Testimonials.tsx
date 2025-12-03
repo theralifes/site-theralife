@@ -4,19 +4,19 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Maria Silva",
-      location: "São Paulo, SP",
+      location: "Belém, Pará",
       text: "Os produtos da Theralife transformaram minha rotina. Sinto muito mais energia e disposição no dia a dia!",
       rating: 5
     },
     {
       name: "João Santos",
-      location: "Rio de Janeiro, RJ",
+      location: "Belém, Pará",
       text: "Qualidade excepcional! O Carvão Ativado realmente ajudou com minha digestão. Recomendo muito!",
       rating: 5
     },
     {
       name: "Ana Costa",
-      location: "Belo Horizonte, MG",
+      location: "Belém, Pará",
       text: "Produtos naturais de verdade. O atendimento é excelente e a entrega foi super rápida.",
       rating: 5
     }
@@ -39,7 +39,7 @@ const Testimonials = () => {
         {/* Testimonials Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <div 
+            <div
               key={testimonial.name}
               className="p-6 sm:p-8 bg-card rounded-xl sm:rounded-2xl shadow-medium hover:shadow-strong transition-all duration-300 hover:-translate-y-1 animate-fade-up"
               style={{ animationDelay: `${index * 0.1}s` }}
