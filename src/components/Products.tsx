@@ -2,16 +2,16 @@ import { useNavigate } from "react-router-dom";
 import ProductCard from "./ProductCard";
 import { Button } from "@/components/ui/button";
 // Importar novas imagens
-import saudeMulherImg from "@/assets/novas-images/Saude-da-mulher.jpg";
-import seneImg from "@/assets/novas-images/sene.jpg";
-import extremeImg from "@/assets/novas-images/extreme.jpg";
-import detoxImg from "@/assets/novas-images/detox.jpg";
-import ashwagandhaImg from "@/assets/novas-images/aswaganhda.jpg";
-import mulunguImg from "@/assets/novas-images/mulungo.jpg";
-import calmanteImg from "@/assets/novas-images/calmante.jpg";
-import seca from "@/assets/novas-images/seca.jpg";
-import carvao from "@/assets/novas-images/carvao.jpg";
-import gl from "@/assets/novas-images/gl.jpg";
+import saudeMulherImg from "@/assets/novas-images/Saude-da-mulher.webp";
+import seneImg from "@/assets/novas-images/sene.webp";
+import extremeImg from "@/assets/novas-images/extreme.webp";
+import detoxImg from "@/assets/novas-images/detox.webp";
+import ashwagandhaImg from "@/assets/novas-images/aswaganhda.webp";
+import mulunguImg from "@/assets/novas-images/mulungo.webp";
+import calmanteImg from "@/assets/novas-images/calmante.webp";
+import seca from "@/assets/novas-images/seca.webp";
+import carvao from "@/assets/novas-images/carvao.webp";
+import gl from "@/assets/novas-images/gl.webp";
 
 const Products = () => {
   const navigate = useNavigate();

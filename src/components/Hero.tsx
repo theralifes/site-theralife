@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import heroImage from "@/assets/hero-forest.png";
+import heroImage from "@/assets/hero-forest.webp";
 
 const highlights = ["Ingredientes puros", "Processos certificados", "Entrega para todo o Brasil"];
 

@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import womanImg from "@/assets/novas-images/woman.jpg";
+import womanImg from "@/assets/novas-images/woman.webp";
 
 interface AboutProps {
   whatsappLink?: string;
