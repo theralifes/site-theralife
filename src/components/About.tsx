@@ -33,10 +33,10 @@ const About = ({ whatsappLink = "https://wa.me/91991585004" }: AboutProps) => {
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 Fundadora da Theralife
-​Acredito que a saúde ideal reside na força da natureza. Minha formação em Administração Pública e MBA em Recursos Humanos, somada aos meus estudos em Pós-graduação em Psicanálise e Comportamento Humano, me permite gerir a Theralife com um olhar que une rigor, qualidade e entendimento do bem-estar humano.
-​A Theralife nasceu de uma necessidade urgente e pessoal. Após um grave problema de saúde (uma hérnia de disco que pressionou meu nervo ciático e me colocou frente à possibilidade de uma cirurgia), recusei o caminho medicamentoso e me dediquei a encontrar soluções naturais. Essa experiência me transformou e me move a criar uma marca onde dedicação e resultado caminham juntos.
-​Trabalho com uma curadoria meticulosa para trazer a você apenas os melhores produtos naturais do mercado. Cada item é selecionado pensando no seu bem-estar, na eficácia e em resultados reais e duradouros.
-​Vamos juntos transformar sua saúde! Estou à disposição para conversar e te ajudar a encontrar o suplemento perfeito para suas necessidades.
+​                Acredito que a saúde ideal reside na força da natureza. Minha formação em Administração Pública e MBA em Recursos Humanos, somada aos meus estudos em Pós-graduação em Psicanálise e Comportamento Humano, me permite gerir a Theralife com um olhar que une rigor, qualidade e entendimento do bem-estar humano.
+                ​A Theralife nasceu de uma necessidade urgente e pessoal. Após um grave problema de saúde (uma hérnia de disco que pressionou meu nervo ciático e me colocou frente à possibilidade de uma cirurgia), recusei o caminho medicamentoso e me dediquei a encontrar soluções naturais. Essa experiência me transformou e me move a criar uma marca onde dedicação e resultado caminham juntos.
+                ​Trabalho com uma curadoria meticulosa para trazer a você apenas os melhores produtos naturais do mercado. Cada item é selecionado pensando no seu bem-estar, na eficácia e em resultados reais e duradouros.
+​               Vamos juntos transformar sua saúde! Estou à disposição para conversar e te ajudar a encontrar o suplemento perfeito para suas necessidades.
               </p>
               <Button
                 variant="whatsapp"
